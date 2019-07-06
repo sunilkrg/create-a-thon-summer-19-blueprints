@@ -1,4 +1,6 @@
 import tkinter as tk
+import student_reg as st
+import parent_reg as pa
 
 mainWindow = tk.Tk()
 mainWindow.title('Untaught Big Letters')
@@ -7,11 +9,11 @@ label_1 = tk.Label(mainWindow, text="\n  Untaught Big Letters  \n", font=("Georg
 label_1.pack(padx=100, pady=50)
 
 
-button_1 = tk.Button(mainWindow, text="Student Registration", command=lambda: "", padx=275, pady=25,
+button_1 = tk.Button(mainWindow, text="Student Registration", command=lambda: st.insert(), padx=275, pady=25,
                      activebackground='grey', activeforeground='white')
 button_1.pack()
 
-button_2 = tk.Button(mainWindow, text="Parent Registration", command=lambda: "", padx=240, pady=25,
+button_2 = tk.Button(mainWindow, text="Parent Registration", command=lambda: pa.insert(), padx=240, pady=25,
                      activebackground='grey', activeforeground='white')
 button_2.pack()
 
